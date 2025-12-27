@@ -1,0 +1,717 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* utilities */
+.my-font{
+    font-family: "Noto Sans";
+}
+.flex{
+    display: flex;
+}
+.flexc{
+    display: flex;
+    flex-direction: column;
+}
+.ali{
+    align-items: center;
+}
+.trans-btn{
+    color: white;
+    border: 1px solid grey;
+    font-family: "Noto Sans";
+    font-weight: 500;
+    background-color: transparent;
+    border-radius: 5px;
+}
+.red-btn{
+    background-color:rgb(229, 9, 20) ;
+    font-family: "Noto Sans";
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.hide{
+    display: none;
+}
+.red-btn:hover{
+    background-color:rgb(183, 9, 17) ;
+}
+.icon-img{
+    height: 70px;
+    width: 70px;
+}
+/* hero */
+.hero{
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.78)), url(./images/hero.jpg);
+    
+    background-size:cover,cover;
+    background-repeat: no-repeat;
+    background-position:center center, center -25px;
+}
+.bl-div{
+    height: 120px;
+    width: 100%;
+    background: linear-gradient(to bottom,
+    rgba(0,0,0,1),
+    rgba(0,0,0,0) )
+    ;
+}
+.nav-bar{
+    width: 81%;
+    height: 75%;
+    margin-inline: auto;
+    justify-content: space-between;
+}
+.sign-btn-grp{
+    gap: 15px;
+}
+.lang-btn{
+    color: white;
+    padding-inline: 14px;
+    padding-block: 5px;
+    font-size: 1.005rem;
+}
+.si-btn{
+     color: white;
+    padding-inline: 15px;
+    padding-block: 5px;
+}
+/* herotxt */
+.hero-txt{
+    height: 80vh;
+    width: 80%;
+    
+}
+.content{
+    /* border: 2px solid white; */
+    font-family: "Noto Sans";
+    margin-inline: auto;
+    width: 50%;
+    text-align: center;
+}
+.content h1{
+    line-height: 70px;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.bold-para{
+    margin-top: 0px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.email-btn-grp{
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+.email-inp{
+    color: white;
+    padding-block: 5px;
+    width: 350px;
+    font-size: 1.005rem;
+    padding-inline: 20px;
+}
+.start-btn{
+    color: white;
+    width: 200px;
+    font-size: 1.55rem;
+    padding-inline: 10px;
+
+}
+
+/* container */
+
+.container{
+    margin-top: 50px;
+    font-family: "Noto Sans";
+    font-weight: 400;
+    width: 80%;
+    /* height: 200vh; */
+    margin-inline: auto;
+}
+.cards{
+    width: 100%;
+    gap: 10px;
+}
+.slider-le-btn,.slider-ri-btn{
+    height: 130px;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    width: 25px;
+    border: none;
+    background-color: rgba(55, 52, 52, 0.526);
+    color: rgb(255, 255, 255);
+}
+#slide-left:hover,#slide-right:hover{
+    background-color: rgba(82, 81, 81, 0.719);
+    cursor: pointer;
+}
+
+.slider-window {
+    width: 100%;
+    overflow: hidden;
+}
+.card-list{
+    transition: 0.8s ease-out;
+    gap: 50px;
+    padding: 0;
+    justify-content:flex-start;
+    list-style: none;
+}
+.card-design{
+    font-size: 7rem;
+    font-family: "Noto Sans";
+    font-weight: bolder;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(198, 193, 193);
+     border-radius: 10px;
+    border: none;
+    width: 185px;
+    height: 260px;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+}
+.card-design:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+.card-list li:nth-child(1) button{
+    background-image: url(./images/cards/card1.webp);
+}
+.card-list li:nth-child(2) button{
+    background-image: url(./images/cards/card2.webp);
+}
+.card-list li:nth-child(3) button{
+    background-image: url(./images/cards/card3.webp);
+}
+.card-list li:nth-child(4) button{
+    background-image: url(./images/cards/card4.webp);
+}
+.card-list li:nth-child(5) button{
+    background-image: url(./images/cards/card5.webp);
+}
+.card-list li:nth-child(6) button{
+    background-image: url(./images/cards/card6.webp);
+}
+.card-list li:nth-child(7) button{
+    background-image: url(./images/cards/card7.webp);
+}
+.card-list li:nth-child(8) button{
+    background-image: url(./images/cards/card8.webp);
+}
+.card-list li:nth-child(9) button{
+    background-image: url(./images/cards/card9.webp);
+}
+.card-list li:nth-child(10) button{
+    background-image: url(./images/cards/card10.webp);
+}
+
+/* reasons */
+
+.reasons{
+    margin-block: 50px;
+    width: 100%;
+}
+.reason-card{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+.div-card{
+    text-align: left;
+    height: 270px;
+    flex: 1 1 260px;     /* setting height basis*/
+
+    background:linear-gradient(to bottom,#192044,#1f111e);
+    border-radius: 15px;
+    padding-inline: 10px;
+    padding-block: 5px;
+    gap: 15px;
+}
+.div-card-txt{
+    height: 70%;
+}
+.div-card h2{
+    font-size: 1.4rem;
+}
+.div-card p{
+    color: #acabb4;
+}
+.icon-div{
+    height: 20%;
+    justify-content: flex-end;
+}
+/* faqs */
+.faq{
+    width: 100%;
+}
+.faq-div{
+    margin-top: 10px;
+    height: 80px;
+    width: 96%;
+    background-color: #2d2d2d;
+    justify-content: space-between;
+    padding-inline: 2%;
+    font-size: 1.5rem;
+    transition: 0.4s ease;
+}
+.faq-div:hover{
+    background-color: #3d3c3c;
+}
+.tick-cross{
+    background:none;
+    border: none;
+    font-size: 3rem;
+    color: white;
+    font-weight: lighter;
+}
+.subdiv{
+    margin-top: 0px;
+        margin-bottom: 10px;
+     width: 96%;
+     padding-inline: 2%;
+     padding-bottom: 5px;
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 1.5rem;
+    border-top: 1px solid black ;
+}
+
+/* subscribe */
+
+.subscribe{
+    margin-block: 50px;
+    justify-content: center;
+}
+.email-inp-2{
+     color: white;
+    padding-block: 5px;
+    width: 45%;
+    font-size: 1.005rem;
+    padding-inline: 20px;
+}
+.start-btn-2{
+    color: white;
+    width: 17%;
+    font-size: 1.55rem;
+    padding-inline: 10px;
+
+}
+
+/* footer */
+
+.footer{
+    color: #adaeb3;
+    margin-bottom: 200px;
+}
+.footer a{
+    color: #adaeb3;
+}
+.outer{
+    margin-top: 30px;
+    width: 100%;
+    gap: 14%;
+    margin-bottom: 50px;
+}
+.inner-list{
+    font-size: 0.9rem;
+    padding-left: 0px;
+    gap: 10px;
+    list-style: none;
+}
+
+
+@media (min-width:960px ) and (max-width:1280px){
+    .hero-txt{
+        margin-top: 20px;
+        height: 60vh;
+    }
+    .content{
+        width: 65%;
+    }
+    .content h1{
+        line-height: 50px;
+        font-size: 2.3rem;
+        font-weight: bolder;
+        margin-bottom: 10px;
+    }
+    .bold-para{
+        margin-top: 0px;
+        font-size: 1.05rem;
+        font-weight: 500;
+    }
+    .start-btn{
+        width: 230px;
+        font-size: 1.2rem;
+        padding: 0px;
+    }
+    .card-design{
+        width: 140px;
+        height: 200px;
+        font-size: 5rem;                              
+                                                  
+    }
+    .reason-card{
+        width: 100%;
+        flex-wrap: wrap;  /*help wrapping*/
+    }
+    .div-card{
+        flex: 1 1 350px;  /*it sets the flex-basis of 350px means it is the*/
+        height: 250px;
+    }
+    .div-card-txt{
+        height: 60%;
+    }
+    .icon-div{
+        height: 10%;
+    }
+    .start-btn-2{
+        font-size: 1.1rem;
+    }
+}
+@media (min-width:600px) and (max-width:960px){
+    .logo{
+        height: 90px;
+        width: 90px;
+    }
+    .hero{
+        width: 100%;
+    }
+    .hero-txt{
+
+        height: 55vh;
+    }
+    .nav-bar{
+        width: 90%;
+        height: 75%;
+    }
+    .content{
+        width: 90%;
+    }
+    .content h1{
+        line-height: 40px;
+        font-size: 1.9rem;
+        font-weight: bolder;
+        margin-bottom: 10px;
+    }
+    .bold-para{
+        margin-top: 0px;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    .email-btn-grp{
+        margin-top: 0;
+    }
+    .start-btn{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+    .card-design{
+        width: 100px;
+        height: 150px;
+        font-size: 4rem;                              
+        background-position: center;  
+        background-size: cover;                                 
+    }
+    .card-list{
+        gap: 20px;
+    }
+    .reason-card{
+        flex-direction: column;
+    }
+    .div-card{
+        max-height: 200px;
+        flex: 1 1 200px;
+        width: 100%;
+    }
+    .div-card-txt{
+        height: 55%;
+    }
+    .faq-div,.subdiv{
+        font-size: 1.1rem;
+    }
+    .subscribe p{
+        font-size: 0.85rem;
+    }
+    .start-btn-2{
+        width: 25%;
+        font-size: 0.9rem;
+    }
+    .outer{
+        flex-direction: column;
+        width: 85%;
+        flex-wrap: wrap;
+        gap:20%;
+    }
+    .inner-list{
+        width: 40%;
+    }
+}
+@media (min-width:312px) and (max-width:600px){
+    .hero{
+        width: 100%;
+    }
+    .logo{
+        height: 80px;
+        width: 80px;
+    }
+     .nav-bar{
+        width: 80%;
+        height: 60%;
+        gap: 20px;
+    }
+    .sign-btn-grp{
+        height: 50%;
+        gap: 10px;
+    }
+    .lang-btn{
+        font-size: 0rem;
+    }
+    .hero-txt{
+        height: 80vh;
+        width: 80%;
+    }
+    .content{
+        height: 90%;
+        width: 100%;
+    }
+    .content h1{
+        line-height: 35px;
+        font-size: 1.8rem;
+        font-weight: bolder;
+        margin-bottom: 15px;
+    }
+    .bold-para{
+        margin-top: 0px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .light-para{
+        margin-top: 0;
+        font-size: 0.95rem;
+    }
+    .email-btn-grp{
+        height:auto;
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .email-inp{
+        padding-block: 5px;
+        width: 90%;
+        font-size: 1rem;
+        padding-inline: 10px;
+    }
+    .start-btn{
+        width: 170px;
+        font-size: 1.1rem;
+        padding-inline: 10px;
+        padding-block: 10px;
+    }
+    h2{
+        font-size: 1.05rem;
+    }
+    .card-design{
+         width: 120px;
+        height: 150px;
+        font-size: 4rem;                              
+        background-position: center;  
+        background-size: cover;
+    }
+    .card-list{
+        gap: 15px;
+    }
+    .reason-card{
+        flex-direction: column;
+    }
+    .div-card{
+        max-height: 200px;
+        flex: 1 1 200px;
+        width: 100%;
+    }
+    .div-card-txt{
+        height: 55%;
+    }
+    .div-card-txt h2{
+        font-size: 1.05rem;
+    }
+     .faq-div,.subdiv{
+        font-size: 1rem;
+        padding-inline: 10px;
+    }
+    .tick-cross img{
+        height: 25px;
+        width: 25px;
+    }
+    .subscribe p{
+        font-size: 0.92rem;
+    }
+    .email-inp-2{
+        margin-top: 10px;
+        width: 70%;
+    }
+    .start-btn-2{
+        width: 50%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .outer{
+        flex-direction: column;
+        width: 85%;
+        flex-wrap: wrap;
+        gap:20%;
+    }
+    .inner-list{
+        width: 40%;
+    }
+}
+
+@media(max-width:312px){
+    .hero{
+        width: 100%;
+    }
+    .logo{
+        height: 80px;
+        width: 80px;
+    }
+     .nav-bar{
+        width: 80%;
+        height: 60%;
+        gap: 10px;
+    }
+    .sign-btn-grp{
+        height: 50%;
+        gap: 7px;
+    }
+    .lang-btn{
+        font-size: 0rem;
+    }
+    .si-btn{
+        font-size: 0.5rem;
+        padding-inline: 5px;
+    }
+    .hero-txt{
+        height: 80vh;
+        width: 80%;
+    }
+    .content{
+        height: 90%;
+        width: 100%;
+    }
+    .content h1{
+        line-height: 35px;
+        font-size: 1.8rem;
+        font-weight: bolder;
+        margin-bottom: 15px;
+    }
+    .bold-para{
+        margin-top: 0px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .light-para{
+        margin-top: 0;
+        font-size: 0.95rem;
+    }
+    .email-btn-grp{
+        height:auto;
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .email-inp{
+        padding-block: 5px;
+        width: 90%;
+        font-size: 1rem;
+        padding-inline: 10px;
+    }
+    .start-btn{
+        width: 170px;
+        font-size: 1.1rem;
+        padding-inline: 10px;
+        padding-block: 10px;
+    }
+    h2{
+        font-size: 1.05rem;
+    }
+    .card-design{
+         width: 120px;
+        height: 150px;
+        font-size: 4rem;                              
+        background-position: center;  
+        background-size: cover;
+    }
+    .card-list{
+        gap: 15px;
+    }
+    .reason-card{
+        flex-direction: column;
+    }
+    .div-card{
+        max-height: 200px;
+        flex: 1 1 200px;
+        width: 100%;
+    }
+    .div-card-txt{
+        height: 55%;
+    }
+    .div-card-txt h2{
+        font-size: 1.05rem;
+    }
+     .faq-div,.subdiv{
+        font-size: 1rem;
+        padding-inline: 10px;
+    }
+    .tick-cross img{
+        height: 25px;
+        width: 25px;
+    }
+    .subscribe p{
+        font-size: 0.92rem;
+    }
+    .email-inp-2{
+        margin-top: 10px;
+        width: 70%;
+    }
+    .start-btn-2{
+        width: 50%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .outer{
+        flex-direction: column;
+        width: 85%;
+        flex-wrap: wrap;
+        gap:20%;
+    }
+    .inner-list{
+        width: 40%;
+    }
+}
